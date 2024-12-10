@@ -1,0 +1,25 @@
+ALGORITHM project
+VAR
+    Length:INTEGER:=0;
+    Words:INTEGER:= 0;
+    Vowels:INTEGER:= 0;
+    character:CHAR;
+    voyelles:STRING:=" ";
+BEGIN
+    write("Enter a sentence ending with a period:");
+    read("character");
+    WHILE Character != "." DO
+        Length ← Length + 1;
+    IF Character = "a" OR "e" OR "i" OR "o" OR "u" OR "A" OR "E" OR "I" OR "O" OR "U" THEN
+        Vowels ← Vowels + 1;
+    End If
+    read("character");
+    END WHILE
+    Length:= Length + 1
+    IF PreviousChar != " " THEN
+        Words ← Words + 1;
+    END IF
+    print("Length of the sentence: ", Length);
+    print("Number of words: ", Words);
+    print("Number of vowels: ", Vowels)
+END
